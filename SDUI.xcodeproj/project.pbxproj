@@ -15,11 +15,30 @@
 		301A667527C4EDB900264F84 /* SDUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A667427C4EDB900264F84 /* SDUIUITests.swift */; };
 		301A667727C4EDBA00264F84 /* SDUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A667627C4EDBA00264F84 /* SDUIUITestsLaunchTests.swift */; };
 		305D2B1627CE465A00DE5C52 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B1527CE465A00DE5C52 /* Alamofire */; };
-		305D2B1927CE46B300DE5C52 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B1827CE46B300DE5C52 /* RxCocoa */; };
-		305D2B1B27CE46B300DE5C52 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B1A27CE46B300DE5C52 /* RxSwift */; };
-		305D2B1D27CE46B300DE5C52 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B1C27CE46B300DE5C52 /* RxTest */; };
 		305D2B2027CE47B400DE5C52 /* UIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D2B1F27CE47B400DE5C52 /* UIComponent.swift */; };
 		305D2B2327CE5F1A00DE5C52 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D2B2227CE5F1A00DE5C52 /* BaseRequest.swift */; };
+		305D2B3127CF75A100DE5C52 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D2B3027CF759E00DE5C52 /* ServiceRequest.swift */; };
+		305D2B3427CF765600DE5C52 /* MoviesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D2B3327CF765500DE5C52 /* MoviesResult.swift */; };
+		305D2B3727CF77C500DE5C52 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D2B3627CF77C400DE5C52 /* HomePageController.swift */; };
+		305D2B3A27CF7F5000DE5C52 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B3927CF7F5000DE5C52 /* RxBlocking */; };
+		305D2B3C27CF7F5000DE5C52 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B3B27CF7F5000DE5C52 /* RxBlocking-Dynamic */; };
+		305D2B3D27CF7F5000DE5C52 /* RxBlocking-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B3B27CF7F5000DE5C52 /* RxBlocking-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		305D2B3F27CF7F5000DE5C52 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B3E27CF7F5000DE5C52 /* RxCocoa */; };
+		305D2B4127CF7F5000DE5C52 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4027CF7F5000DE5C52 /* RxCocoa-Dynamic */; };
+		305D2B4227CF7F5000DE5C52 /* RxCocoa-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4027CF7F5000DE5C52 /* RxCocoa-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		305D2B4427CF7F5000DE5C52 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4327CF7F5000DE5C52 /* RxRelay */; };
+		305D2B4627CF7F5000DE5C52 /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4527CF7F5000DE5C52 /* RxRelay-Dynamic */; };
+		305D2B4727CF7F5000DE5C52 /* RxRelay-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4527CF7F5000DE5C52 /* RxRelay-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		305D2B4927CF7F5000DE5C52 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4827CF7F5000DE5C52 /* RxSwift */; };
+		305D2B4B27CF7F5000DE5C52 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4A27CF7F5000DE5C52 /* RxSwift-Dynamic */; };
+		305D2B4C27CF7F5000DE5C52 /* RxSwift-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4A27CF7F5000DE5C52 /* RxSwift-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		305D2B4E27CF7F5000DE5C52 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4D27CF7F5000DE5C52 /* RxTest */; };
+		305D2B5027CF7F5100DE5C52 /* RxTest-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4F27CF7F5100DE5C52 /* RxTest-Dynamic */; };
+		305D2B5127CF7F5100DE5C52 /* RxTest-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 305D2B4F27CF7F5100DE5C52 /* RxTest-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		30899EE627CF9D7D00E2F414 /* TvShowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30899EE527CF9D7D00E2F414 /* TvShowResult.swift */; };
+		30899EE827CF9E8B00E2F414 /* MovieListUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */; };
+		30899EEB27CFA31100E2F414 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 30899EEA27CFA31100E2F414 /* Kingfisher */; };
+		30899EED27CFBBDA00E2F414 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30899EEC27CFBBDA00E2F414 /* HomePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +58,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		305D2B5227CF7F5100DE5C52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				305D2B4C27CF7F5000DE5C52 /* RxSwift-Dynamic in Embed Frameworks */,
+				305D2B4227CF7F5000DE5C52 /* RxCocoa-Dynamic in Embed Frameworks */,
+				305D2B3D27CF7F5000DE5C52 /* RxBlocking-Dynamic in Embed Frameworks */,
+				305D2B5127CF7F5100DE5C52 /* RxTest-Dynamic in Embed Frameworks */,
+				305D2B4727CF7F5000DE5C52 /* RxRelay-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		301A665627C4EDB600264F84 /* SDUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301A665927C4EDB600264F84 /* SDUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDUIApp.swift; sourceTree = "<group>"; };
@@ -52,6 +89,12 @@
 		301A667627C4EDBA00264F84 /* SDUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		305D2B1F27CE47B400DE5C52 /* UIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponent.swift; sourceTree = "<group>"; };
 		305D2B2227CE5F1A00DE5C52 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		305D2B3027CF759E00DE5C52 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		305D2B3327CF765500DE5C52 /* MoviesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResult.swift; sourceTree = "<group>"; };
+		305D2B3627CF77C400DE5C52 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		30899EE527CF9D7D00E2F414 /* TvShowResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowResult.swift; sourceTree = "<group>"; };
+		30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListUIComponent.swift; sourceTree = "<group>"; };
+		30899EEC27CFBBDA00E2F414 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +102,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305D2B1D27CE46B300DE5C52 /* RxTest in Frameworks */,
-				305D2B1B27CE46B300DE5C52 /* RxSwift in Frameworks */,
-				305D2B1927CE46B300DE5C52 /* RxCocoa in Frameworks */,
+				30899EEB27CFA31100E2F414 /* Kingfisher in Frameworks */,
+				305D2B4E27CF7F5000DE5C52 /* RxTest in Frameworks */,
+				305D2B4427CF7F5000DE5C52 /* RxRelay in Frameworks */,
+				305D2B4B27CF7F5000DE5C52 /* RxSwift-Dynamic in Frameworks */,
+				305D2B3C27CF7F5000DE5C52 /* RxBlocking-Dynamic in Frameworks */,
+				305D2B4127CF7F5000DE5C52 /* RxCocoa-Dynamic in Frameworks */,
 				305D2B1627CE465A00DE5C52 /* Alamofire in Frameworks */,
+				305D2B3F27CF7F5000DE5C52 /* RxCocoa in Frameworks */,
+				305D2B4627CF7F5000DE5C52 /* RxRelay-Dynamic in Frameworks */,
+				305D2B4927CF7F5000DE5C52 /* RxSwift in Frameworks */,
+				305D2B5027CF7F5100DE5C52 /* RxTest-Dynamic in Frameworks */,
+				305D2B3A27CF7F5000DE5C52 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +141,7 @@
 				301A666927C4EDB900264F84 /* SDUITests */,
 				301A667327C4EDB900264F84 /* SDUIUITests */,
 				301A665727C4EDB600264F84 /* Products */,
+				305D2B3827CF7F5000DE5C52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +158,8 @@
 		301A665827C4EDB600264F84 /* SDUI */ = {
 			isa = PBXGroup;
 			children = (
+				305D2B3527CF779600DE5C52 /* Screen */,
+				305D2B3227CF75C000DE5C52 /* Models */,
 				305D2B2127CE5F0700DE5C52 /* Request */,
 				305D2B1E27CE474700DE5C52 /* UIComponent */,
 				301A665927C4EDB600264F84 /* SDUIApp.swift */,
@@ -145,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				305D2B1F27CE47B400DE5C52 /* UIComponent.swift */,
+				30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -153,8 +208,34 @@
 			isa = PBXGroup;
 			children = (
 				305D2B2227CE5F1A00DE5C52 /* BaseRequest.swift */,
+				305D2B3027CF759E00DE5C52 /* ServiceRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		305D2B3227CF75C000DE5C52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				305D2B3327CF765500DE5C52 /* MoviesResult.swift */,
+				30899EE527CF9D7D00E2F414 /* TvShowResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		305D2B3527CF779600DE5C52 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				305D2B3627CF77C400DE5C52 /* HomePageController.swift */,
+				30899EEC27CFBBDA00E2F414 /* HomePageView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		305D2B3827CF7F5000DE5C52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +248,7 @@
 				301A665227C4EDB600264F84 /* Sources */,
 				301A665327C4EDB600264F84 /* Frameworks */,
 				301A665427C4EDB600264F84 /* Resources */,
+				305D2B5227CF7F5100DE5C52 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,9 +257,17 @@
 			name = SDUI;
 			packageProductDependencies = (
 				305D2B1527CE465A00DE5C52 /* Alamofire */,
-				305D2B1827CE46B300DE5C52 /* RxCocoa */,
-				305D2B1A27CE46B300DE5C52 /* RxSwift */,
-				305D2B1C27CE46B300DE5C52 /* RxTest */,
+				305D2B3927CF7F5000DE5C52 /* RxBlocking */,
+				305D2B3B27CF7F5000DE5C52 /* RxBlocking-Dynamic */,
+				305D2B3E27CF7F5000DE5C52 /* RxCocoa */,
+				305D2B4027CF7F5000DE5C52 /* RxCocoa-Dynamic */,
+				305D2B4327CF7F5000DE5C52 /* RxRelay */,
+				305D2B4527CF7F5000DE5C52 /* RxRelay-Dynamic */,
+				305D2B4827CF7F5000DE5C52 /* RxSwift */,
+				305D2B4A27CF7F5000DE5C52 /* RxSwift-Dynamic */,
+				305D2B4D27CF7F5000DE5C52 /* RxTest */,
+				305D2B4F27CF7F5100DE5C52 /* RxTest-Dynamic */,
+				30899EEA27CFA31100E2F414 /* Kingfisher */,
 			);
 			productName = SDUI;
 			productReference = 301A665627C4EDB600264F84 /* SDUI.app */;
@@ -254,6 +344,7 @@
 			packageReferences = (
 				305D2B1427CE465A00DE5C52 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				30899EE927CFA31100E2F414 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 301A665727C4EDB600264F84 /* Products */;
 			projectDirPath = "";
@@ -297,10 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305D2B3127CF75A100DE5C52 /* ServiceRequest.swift in Sources */,
+				30899EE827CF9E8B00E2F414 /* MovieListUIComponent.swift in Sources */,
+				305D2B3727CF77C500DE5C52 /* HomePageController.swift in Sources */,
+				305D2B3427CF765600DE5C52 /* MoviesResult.swift in Sources */,
+				30899EED27CFBBDA00E2F414 /* HomePageView.swift in Sources */,
 				305D2B2327CE5F1A00DE5C52 /* BaseRequest.swift in Sources */,
 				301A665C27C4EDB600264F84 /* ContentView.swift in Sources */,
 				305D2B2027CE47B400DE5C52 /* UIComponent.swift in Sources */,
 				301A665A27C4EDB600264F84 /* SDUIApp.swift in Sources */,
+				30899EE627CF9D7D00E2F414 /* TvShowResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +762,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		30899EE927CFA31100E2F414 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -673,20 +778,60 @@
 			package = 305D2B1427CE465A00DE5C52 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		305D2B1827CE46B300DE5C52 /* RxCocoa */ = {
+		305D2B3927CF7F5000DE5C52 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		305D2B3B27CF7F5000DE5C52 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		305D2B3E27CF7F5000DE5C52 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		305D2B1A27CE46B300DE5C52 /* RxSwift */ = {
+		305D2B4027CF7F5000DE5C52 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		305D2B4327CF7F5000DE5C52 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		305D2B4527CF7F5000DE5C52 /* RxRelay-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxRelay-Dynamic";
+		};
+		305D2B4827CF7F5000DE5C52 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		305D2B1C27CE46B300DE5C52 /* RxTest */ = {
+		305D2B4A27CF7F5000DE5C52 /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+		305D2B4D27CF7F5000DE5C52 /* RxTest */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxTest;
+		};
+		305D2B4F27CF7F5100DE5C52 /* RxTest-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 305D2B1727CE46B300DE5C52 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxTest-Dynamic";
+		};
+		30899EEA27CFA31100E2F414 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30899EE927CFA31100E2F414 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
