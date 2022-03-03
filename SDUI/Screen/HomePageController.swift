@@ -19,6 +19,7 @@ class HomePageController:ObservableObject{
 //            components.append(TvShowsListUIComponent(tvShowsResult: TvShowsResult(results: tvShowsResult.results, title: "Popular Tv Shows")))
 
             components.append(MovieListUIComponent(movieResult: MoviesResult(results:movieResult.results, title: "Kevin")))
+            components.append(TVShowUIComponent(tvShowResult: TvShowsResult(results: tvShowResult.results, title: "Balala")))
 //            components.append(TvShow)
             return components
 

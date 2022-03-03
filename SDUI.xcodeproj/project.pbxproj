@@ -25,6 +25,7 @@
 		30899EE827CF9E8B00E2F414 /* MovieListUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */; };
 		30899EEB27CFA31100E2F414 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 30899EEA27CFA31100E2F414 /* Kingfisher */; };
 		30899EED27CFBBDA00E2F414 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30899EEC27CFBBDA00E2F414 /* HomePageView.swift */; };
+		30FE8EFA27D0D66E00DD3E07 /* TVShowUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE8EF927D0D66E00DD3E07 /* TVShowUIComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		30899EE527CF9D7D00E2F414 /* TvShowResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowResult.swift; sourceTree = "<group>"; };
 		30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListUIComponent.swift; sourceTree = "<group>"; };
 		30899EEC27CFBBDA00E2F414 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		30FE8EF927D0D66E00DD3E07 /* TVShowUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowUIComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				305D2B1F27CE47B400DE5C52 /* UIComponent.swift */,
 				30899EE727CF9E8B00E2F414 /* MovieListUIComponent.swift */,
+				30FE8EF927D0D66E00DD3E07 /* TVShowUIComponent.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				30899EE827CF9E8B00E2F414 /* MovieListUIComponent.swift in Sources */,
 				305D2B3727CF77C500DE5C52 /* HomePageController.swift in Sources */,
 				305D2B3427CF765600DE5C52 /* MoviesResult.swift in Sources */,
+				30FE8EFA27D0D66E00DD3E07 /* TVShowUIComponent.swift in Sources */,
 				30899EED27CFBBDA00E2F414 /* HomePageView.swift in Sources */,
 				305D2B2327CE5F1A00DE5C52 /* BaseRequest.swift in Sources */,
 				301A665C27C4EDB600264F84 /* ContentView.swift in Sources */,
