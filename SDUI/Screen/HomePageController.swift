@@ -16,9 +16,10 @@ class HomePageController:ObservableObject{
         uiComponents = []
         Observable.zip(respository.getPopularMovies(),respository.getPopularTvShows(),resultSelector: { (movieResult,tvShowResult)  in
             var components:[UIComponent] = []
-            
+//            components.append(TvShowsListUIComponent(tvShowsResult: TvShowsResult(results: tvShowsResult.results, title: "Popular Tv Shows")))
+
             components.append(MovieListUIComponent(movieResult: MoviesResult(results:movieResult.results, title: "Kevin")))
-            
+//            components.append(TvShow)
             return components
 
         }).subscribe(

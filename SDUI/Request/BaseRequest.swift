@@ -10,7 +10,6 @@ import RxSwift
 import Alamofire
 
 class BaseRepository {
-    
     func createRequest<T:Codable>(url:String) -> Observable<T> {
         let obserable = Observable<T>.create { observer ->Disposable in
             AF.request(url).validate().responseJSON { response in

@@ -10,9 +10,13 @@ import Alamofire
 
 @main
 struct SDUIApp: App {
+    var window: UIWindow?
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+
+            HomePageView(controller: HomePageController())
+            
         }
     }
 }

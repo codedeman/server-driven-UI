@@ -12,13 +12,17 @@ struct HomePageView: View,UIDelegate{
     var controller:HomePageController
     
     var body: some View {
-        renderPage(ui: , uiDelegate: <#T##UIDelegate#>)
+        renderPage(ui: controller.uiComponents, uiDelegate: self).background(SwiftUI.Color.white.edgesIgnoringSafeArea(.all)).onAppear {
+            self.controller.loadPage()
+            
+        }.background(SwiftUI.Color.white.edgesIgnoringSafeArea(.all))
+        
 //        Text("Hello, World!")
     }
 }
 
 struct HomePageView_Previews: PreviewProvider {
     static var previews: some View {
-        HomePageView()
+        HomePageView(controller: HomePageController())
     }
 }

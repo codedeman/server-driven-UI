@@ -19,11 +19,11 @@ protocol RequestDeleagate {
 
 class ServiceRequest:BaseRepository,RequestDeleagate {
     func getPopularTvShows() -> Observable<TvShowsResult> {
-        super.createRequest(url: "https://api.themoviedb.org/3/tv/popular?\(apiKey)")
+        return super.createRequest(url: "https://api.themoviedb.org/3/tv/popular?\(apiKey)")
     }
     
     func getPopularMovies() -> Observable<MoviesResult> {
-        return super.createRequest(url:"https://api.themoviedb.org/3/tv/popular?\(apiKey)")
+        return super.createRequest(url: "https://api.themoviedb.org/3/movie/popular?\(apiKey)")
     }
     
     
