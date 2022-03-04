@@ -1,0 +1,70 @@
+{
+    "version":"1.0",
+    "components":[
+        {
+            "type":"NewProduct",
+            "action":{"auto_scroll":1},
+            "data":[
+                {
+                    "image_url":"https://doanhnhanplus.vn/wp-content/uploads/2021/12/Hyundai-Santa-Fe-2022-phien-ban-6-cho-20211213-dnplus-01.jpg"
+                    "name":"SantaFe"
+                    "price":"100000"
+                },
+                
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2022/02/27/2023-kia-sportage-13-164597942-7197-4847-1645980055.jpg"
+                    "name":"Kia Sportage"
+                    "price":"100000"
+
+                },
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2020/08/05/Corolla-Cross-1-8V-3-JPG-4136-1596600377.jpg"
+                    "name":"ToyoTa Cross"
+                    "price":"100000"
+
+                },
+              
+            ]
+        },
+        
+        {
+            "type":"Available",
+            "action":{"auto_scroll":0},
+            "data":[
+                {
+                    "image_url":"https://doanhnhanplus.vn/wp-content/uploads/2021/12/Hyundai-Santa-Fe-2022-phien-ban-6-cho-20211213-dnplus-01.jpg"
+                    "name":"SantaFe"
+                    "price":"100000"
+                },
+                
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2022/02/27/2023-kia-sportage-13-164597942-7197-4847-1645980055.jpg"
+                    "name":"Kia Sportage"
+                    "price":"100000"
+
+                },
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2020/08/05/Corolla-Cross-1-8V-3-JPG-4136-1596600377.jpg"
+                    "name":"ToyoTa Cross"
+                    "price":"100000"
+
+                },
+                
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2020/08/05/Corolla-Cross-1-8V-3-JPG-4136-1596600377.jpg"
+                    "name":"ToyoTa Cross"
+                    "price":"100000"
+
+                },
+                
+                {
+                    "image_url":"https://vcdn-vnexpress.vnecdn.net/2020/08/05/Corolla-Cross-1-8V-3-JPG-4136-1596600377.jpg"
+                    "name":"ToyoTa Cross"
+                    "price":"100000"
+                },
+              
+            ]
+        },
+    
+    ]
+}

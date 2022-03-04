@@ -14,10 +14,16 @@ let apiKey = "api_key=02e40a2424558958a9d91847362b03ae"
 protocol RequestDeleagate {
     func getPopularMovies() ->Observable<MoviesResult>
     func getPopularTvShows() -> Observable<TvShowsResult>
+    func getProduct() -> Observable<ProductModel>
 
 }
 
 class ServiceRequest:BaseRepository,RequestDeleagate {
+    func getProduct() -> Observable<ProductModel> {
+        
+        
+    }
+    
     func getPopularTvShows() -> Observable<TvShowsResult> {
         return super.createRequest(url: "https://api.themoviedb.org/3/tv/popular?\(apiKey)")
     }

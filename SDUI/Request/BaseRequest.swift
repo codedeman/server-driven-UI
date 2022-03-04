@@ -37,6 +37,26 @@ class BaseRepository {
         obserable.observe(on: MainScheduler.instance)
         return obserable
     }
+    
+    func readFileJson<T:Codable>()->Observable<T> {
+        
+        let obserable = Observable<T>.create { observer ->Disposable in
+            guard let url = Bundle.main.url(forResource: "sdu", withExtension: "json") else {
+                print("Json file not found")
+                return
+            }
+            
+            let data = try? Data(contentsOf: url)
+            let project = try JSONDecoder.decode(T.self,from:data)
+            
+            return Disposables.create()
+
+        }
+
+      
+        
+        
+    }
 }
 
 enum AppError: Error {
