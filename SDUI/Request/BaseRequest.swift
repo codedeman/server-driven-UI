@@ -39,21 +39,23 @@ class BaseRepository {
     }
     
     func readFileJson<T:Codable>()->Observable<T> {
-        
-        let obserable = Observable<T>.create { observer ->Disposable in
+        let obserable = Observable<T>.create { observer -> Disposable in
             guard let url = Bundle.main.url(forResource: "sdu", withExtension: "json") else {
-                print("Json file not found")
-                return
+                           print("Json file not found")
+                return Disposables.create()
+            
             }
+            guard  let data = try? Data(contentsOf: url)  else {return Disposables.create()}
             
-            let data = try? Data(contentsOf: url)
-            let project = try JSONDecoder.decode(T.self,from:data)
-            
+            let decoder = JSONDecoder()
+            if let project = try? decoder.decode(T.self, from: data) {
+                observer.onNext(project)
+            }
             return Disposables.create()
-
         }
 
-      
+        obserable.observe(on: MainScheduler.instance)
+        return obserable
         
         
     }

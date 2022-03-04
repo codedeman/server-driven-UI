@@ -20,7 +20,7 @@ protocol RequestDeleagate {
 
 class ServiceRequest:BaseRepository,RequestDeleagate {
     func getProduct() -> Observable<ProductModel> {
-        
+        return super.readFileJson()
         
     }
     

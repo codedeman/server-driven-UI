@@ -14,12 +14,14 @@ class HomePageController:ObservableObject{
     let respository:ServiceRequest = ServiceRequest()
     func loadPage() {
         uiComponents = []
-        Observable.zip(respository.getPopularMovies(),respository.getPopularTvShows(),resultSelector: { (movieResult,tvShowResult)  in
+        Observable.zip(respository.getPopularMovies(),respository.getPopularTvShows(),respository.getProduct(),resultSelector: { (movieResult,tvShowResult,productModel)  in
             var components:[UIComponent] = []
+            
+            
 //            components.append(TvShowsListUIComponent(tvShowsResult: TvShowsResult(results: tvShowsResult.results, title: "Popular Tv Shows")))
 
-            components.append(MovieListUIComponent(movieResult: MoviesResult(results:movieResult.results, title: "Kevin")))
-            components.append(TVShowUIComponent(tvShowResult: TvShowsResult(results: tvShowResult.results, title: "Balala")))
+//            components.append(MovieListUIComponent(movieResult: MoviesResult(results:movieResult.results, title: "Kevin")))
+//            components.append(TVShowUIComponent(tvShowResult: TvShowsResult(results: tvShowResult.results, title: "Balala")))
 //            components.append(TvShow)
             return components
 
