@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Brewery:Decodable,Hashable{
+    let name: String
+    let street: String
+    let city: String
+}

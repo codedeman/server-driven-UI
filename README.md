@@ -8,4 +8,7 @@ technology is used SwiftUI   RXSwift
 ## What is Server Driven UI 
 Simply Server will decide which component to show instead of the client 
 
+## 1. Server Driven Component
+
+
 Article coming soon ❤️

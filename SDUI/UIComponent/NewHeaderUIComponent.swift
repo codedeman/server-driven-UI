@@ -13,52 +13,43 @@ class NewHeaderUIComponent:UIComponent {
    
     
     var uniqueId: String
-    var component:ProductModel
+    var product:[ProductComponent]
     
-    init(component:ProductModel) {
-        self.uniqueId = "Nothing"
-        self.component = component
+    init(product:ProductModel) {
+        self.uniqueId = ""
+        self.product = product.components.filter {$0.type == "NewProduct"}
     }
     
-    func getProductComponent() -> [ProductComponent] {
-        let arrComp = component.component.filter {$0.type  == "NewProduct"}
 
-        return arrComp
-    }
-//    
     func render(uiDelegate: UIDelegate) -> AnyView {
-        let arrComp:[ProductComponent] = component.component.filter {$0.type  == "NewProduct"}
-
-        return NewHeaderView(component: arrComp).toAny()
+        return NewHeaderView(component: product).toAny()
     }
-//    init(tvShowResult:TvShowsResult) {
-//        self.uniqueId = tvShowResult.title ?? "Shows"
-//        self.tvShowResult = tvShowResult
-//    }
-//    return TVShowView(tvShowResult: tvShowResult).toAny()
 
-//    func render(uiDelegate: UIDelegate) -> AnyView {
-//        return NewHeaderView(
-//    }
-    
     
 }
 
 struct NewHeaderView:View {
     
-    let component:ProductComponent
+    let component:[ProductComponent]
     var body: some View {
-        NavigationView{
+//        NavigationView{
+        VStack {
+            Text("Sapa da dat")
+            Text("oi ban oi")
+        }
+        ScrollView(.horizontal,showsIndicators: false) {
             HStack {
-                ScrollView(.horizontal) {
-                    ForEach(component.data, id: \.id) { product    in
+                if let data =  component.first?.data {
+                    ForEach(data, id: \.id) { product    in
                         NewFeedItem(item: product)
                     }
                 }
                 
             }
+            
+        }
+                
 
-        }.navigationBarTitle("New Product")
     }
 }
 
@@ -67,7 +58,7 @@ struct NewFeedItem:View {
     var body:some View {
         VStack {
             KFImage(URL(string: item.image_url ?? "")).resizable()
-            Text(item.name ?? "")
+            Text(item.name ?? "").frame(width: 180, alignment: .center).foregroundColor(.black)
         }
     }
 }

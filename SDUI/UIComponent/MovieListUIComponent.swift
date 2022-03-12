@@ -15,7 +15,7 @@ class MovieListUIComponent:UIComponent {
 
     init(movieResult:MoviesResult){
         self.movieResult = movieResult
-        self.uniqueId = movieResult.title ?? "Movies"
+        self.uniqueId = "Movies"
     }
     
     func render(uiDelegate: UIDelegate) -> AnyView {

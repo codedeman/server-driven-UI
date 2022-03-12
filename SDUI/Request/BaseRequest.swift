@@ -22,6 +22,7 @@ class BaseRepository {
                     do {
                         let project = try JSONDecoder().decode(T.self, from: data)
                         observer.onNext(project)
+                        debugPrint("respone ---- \(project)")
                     } catch {
                         observer.onError(error)
                     }
@@ -45,11 +46,12 @@ class BaseRepository {
                 return Disposables.create()
             
             }
-            guard  let data = try? Data(contentsOf: url)  else {return Disposables.create()}
+            guard  let data = try? Data(contentsOf: url)  else {return observer.onError(AppError.runtimeError("random message")) as! Disposable}
             
             let decoder = JSONDecoder()
-            if let project = try? decoder.decode(T.self, from: data) {
+            if  let project = try? decoder.decode(T.self, from: data)  {
                 observer.onNext(project)
+                print("response json -----\(project)")
             }
             return Disposables.create()
         }

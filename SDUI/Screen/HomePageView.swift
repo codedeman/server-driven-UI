@@ -17,7 +17,6 @@ struct HomePageView: View,UIDelegate{
             
         }.background(SwiftUI.Color.white.edgesIgnoringSafeArea(.all))
         
-//        Text("Hello, World!")
     }
 }
 

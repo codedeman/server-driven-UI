@@ -20,12 +20,13 @@ protocol RequestDeleagate {
 
 class ServiceRequest:BaseRepository,RequestDeleagate {
     func getProduct() -> Observable<ProductModel> {
-        return super.readFileJson()
-        
+        return super.createRequest(url: "https://codedeman.github.io/ssd_api/sdu.json")
     }
+    
     
     func getPopularTvShows() -> Observable<TvShowsResult> {
         return super.createRequest(url: "https://api.themoviedb.org/3/tv/popular?\(apiKey)")
+//        return super.readFileJson()
     }
     
     func getPopularMovies() -> Observable<MoviesResult> {
