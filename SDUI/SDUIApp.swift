@@ -14,9 +14,8 @@ struct SDUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-
-//            BreweriesView()
-            HomePageView(controller: HomePageController())
+            BreweriesView()
+//            HomePageView(controller: HomePageController())
             
         }
     }

@@ -29,6 +29,11 @@ func renderPage(ui:[UIComponent],uiDelegate:UIDelegate)->AnyView {
     
     return ScrollView(.vertical) {
         VStack {
+            NavigationView{
+                
+                
+            }.navigationBarTitle(Text("Hello")).foregroundColor(.black)
+           
             HStack {
                 Spacer()
             }

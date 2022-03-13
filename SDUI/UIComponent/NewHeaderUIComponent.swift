@@ -16,8 +16,9 @@ class NewHeaderUIComponent:UIComponent {
     var product:[ProductComponent]
     
     init(product:ProductModel) {
-        self.uniqueId = ""
+        self.uniqueId = product.version ?? "Fuck"
         self.product = product.components.filter {$0.type == "NewProduct"}
+//        product.
     }
     
 
@@ -34,7 +35,7 @@ struct NewHeaderView:View {
     var body: some View {
 //        NavigationView{
         VStack {
-            Text("Sapa da dat")
+            Text("Kha banh")
             Text("oi ban oi")
         }
         ScrollView(.horizontal,showsIndicators: false) {

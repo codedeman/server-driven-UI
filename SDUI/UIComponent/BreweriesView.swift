@@ -1,72 +1,121 @@
-////
-////  BreweriesView.swift
-////  SDUI
-////
-////  Created by Pham Kien on 08.03.22.
-////
-//
-//import SwiftUI
-//import MapKit
-//
-//struct BreweriesView: View {
-//    @ObservedObject var viewModel = BreweriesViewModel()
-//
-//    let breweries = [Brewery]()
-//    
-////    init (breweries:BreweriesView) {
-////        self.breweries
-////    }
-//    var body: some View {
-//        NavigationView {
-//            
-////            List(viewModel.breweries,id:\.self) { objec in
-////                BreweriesItem(brewery: objec)
-////            }
-////            ScrollView(.horizontal,showsIndicators: false) {
-////                HStack {
-////                    ScrollView(.vertical,showsIndicators: false) {
-////                        VStack {
-////                            ForEach(viewModel.breweries,id:\.name)  { object in
-////                                BreweriesItem(brewery: object)
-////                            }
-////                        }
-////                    }
-////                }
-////
-////            }
-//
-//        }.navigationTitle("What the fuck").onAppear {
-//            viewModel.fetchBrewries()
-//        }
-//    }
-//}
-//
-//struct BreweriesItem:View {
-//    
-//    private let brewery:Brewery
-//    init(brewery:Brewery) {
-//        self.brewery = brewery
-//    }
-//    
-//    var body: some View {
-//        HStack {
+
+
+import SwiftUI
+import Combine
+//import RxTest
+class DataSouce:ObservableObject {
+    @Published var counter = 0
+}
+
+
+struct Counter:View {
+    
+    @ObservedObject var datasource =  DataSouce()
+    
+    var body: some View {
+        VStack {
+            
+            Button("Increment counter") {
+                datasource.counter += 1
+            }
+            Text("count is \(datasource.counter)")
+        }
+        
+    }
+}
+
+
+struct ItemList:View {
+    
+    @State private var items = ["hello","world"]
+    
+    @State private var intValue:Int = 0
+    
+    var body: some View {
+        VStack {
+            Button("Append item to list") {
+                items.append("test")
+            }
+            
+            List(items,id:\.self) { name in
+                Text(name)
+            }
+            Counter()
+            BlindingView(intValue: $intValue)
+        }
+    }
+    
+}
+
+
+struct BlindingView:View {
+    @Binding var intValue:Int
+    
+    var body: some View {
+        VStack {
+            
+            Button("Increment") {
+                intValue += 1
+                
+            }
+            Text("i don't care about that \(intValue)")
+        }
+    }
+}
+
+
+struct BreweriesView: View {
+    @ObservedObject var viewModel = BreweriesViewModel()
+    var body: some View {
+        NavigationView {
+//                VStack {
+//                    HStack {
+//                        Text(viewModel.repoDetail?.language ?? "what the hell").foregroundColor(.black)
+//                    }.onAppear {
+//                        self.viewModel.fetchRepos()
+//                    }
+                    
+                    VStack {
+                        
+                        ScrollView {
+                            
+                            ForEach(viewModel.breweries,id:\.self) { brewery in
+                                BreweryView(brewery: brewery)
+                                
+                            }
+                        }.onAppear {
+                            self.viewModel.fetchBreweries()
+
+                        }
+                    }.navigationTitle(viewModel.repoDetail?.language ?? "").onAppear {
+//                        self.viewModel.fetchRepos()
+                    }
+                    
+
+        }.navigationTitle("I'm gona fuck for that swift ui")
+//            }
+            
+    }
+}
+
+
+struct BreweryView: View {
+    private let brewery: Brewery
+    init(brewery: Brewery) {
+        self.brewery = brewery
+    }
+    
+    var body: some View {
+        HStack {
 //            Image(uiImage: UIImage(named: "beer")!)
-//                           .resizable()
-//                           .scaledToFit()
-//                           .frame(width: 80, height: 80)
-//                       VStack(alignment: .leading, spacing: 15) {
-//                           Text(brewery.name)
-//                               .font(.system(size: 18))
-//                               .foregroundColor(Color.blue)
-//                           Text("\(brewery.city) - \(brewery.street)")
-//                               .font(.system(size: 14))
-//                       }        }
-//    }
-//}
-//
-//
-//struct BreweriesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BreweriesView()
-//    }
-//}
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 80, height: 80)
+            VStack(alignment: .leading, spacing: 15) {
+                Text(brewery.name ?? "")
+                    .font(.system(size: 18))
+                    .foregroundColor(Color.blue)
+            }
+        }
+    }
+}

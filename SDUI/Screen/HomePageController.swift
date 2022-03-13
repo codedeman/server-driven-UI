@@ -19,13 +19,7 @@ class HomePageController:ObservableObject{
             components.append(NewHeaderUIComponent(product: productModel))
 
             components.append(MovieListUIComponent.init(movieResult: movieModel))
-//            components.append(TVShowUIComponent(tvShowResult: tvShowModel))
 
-//            components.append(TvShowsListUIComponent(tvShowsResult: TvShowsResult(results: tvShowsResult.results, title: "Popular Tv Shows")))
-
-//            components.append(MovieListUIComponent(movieResult: MoviesResult(results:movieResult.results, title: "Kevin")))
-//                        components.append(TVShowUIComponent(tvShowResult: TvShowsResult(results: tvShowResult.results, title: "Balala")))
-//            components.append(TvShow)
             return components
 
         }).subscribe(
